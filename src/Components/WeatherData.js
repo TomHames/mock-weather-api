@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-export default class Content extends React.Component {
+export default class WeatherData extends React.Component {
   render() {
     return (
       <div>
