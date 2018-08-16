@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Geolocation from 'react-geolocation';
 
-export default class Location extends Component {
+class Location extends Component {
   render() {
     return(
       <div>
@@ -13,7 +13,6 @@ export default class Location extends Component {
       getCurrentPosition
     }) =>
       <div>
-        <button onClick={getCurrentPosition}>Get Position</button>
         {error &&
           <div>
             {error.message}
@@ -28,3 +27,5 @@ export default class Location extends Component {
     )
   }
 }
+
+export default Location;

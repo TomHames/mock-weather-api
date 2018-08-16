@@ -8,7 +8,7 @@ import {FaLinkedin} from 'react-icons/fa';
 import {FaCoffee} from 'react-icons/fa';
 import {FaHeart} from 'react-icons/fa';
 
-export default class Footer extends React.Component {
+class Footer extends React.Component {
   render() {
     return (
       <div>
@@ -48,3 +48,5 @@ export default class Footer extends React.Component {
     );
   }
 }
+
+export default Footer;
