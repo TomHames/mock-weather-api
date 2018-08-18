@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Footer.css';
 
 import {FaFacebookF} from 'react-icons/fa';
 import {FaGooglePlus} from 'react-icons/fa';

@@ -15,7 +15,7 @@ componentDidMount() {
     console.log(res.data.name);
     // set state with response data e.g. this.setState()
   })
-}
+} 
   render() {
     return (
       <div>
