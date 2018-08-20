@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import "../App.css";
 
-import {FaFacebookF} from 'react-icons/fa';
-import {FaGooglePlus} from 'react-icons/fa';
-import {FaReddit} from 'react-icons/fa';
-import {FaLinkedin} from 'react-icons/fa';
-import {FaCoffee} from 'react-icons/fa';
-import {FaHeart} from 'react-icons/fa';
+import { FaFacebookF } from "react-icons/fa";
+import { FaGooglePlus } from "react-icons/fa";
+import { FaReddit } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaCoffee } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 
 class Footer extends React.Component {
   render() {
@@ -13,36 +14,49 @@ class Footer extends React.Component {
       <div>
         <ul>
           <li>
-            <a href="https://www.facebook.com/tom.hames.3" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF />
+            <a
+              href="https://www.facebook.com/tom.hames.3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF style={{ color: "#3B5998" }} />
             </a>
           </li>
           <li>
             <a
               href="https://plus.google.com/u/0/113284934601551082561"
-              target="_blank" rel="noopener noreferrer"
-              >
-              <FaGooglePlus />
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGooglePlus style={{ color: "#d2d2d2" }} />
             </a>
           </li>
           <li>
             {" "}
-            <a href="https://www.reddit.com/user/Stoic-tom" target="_blank" rel="noopener noreferrer">
-              <FaReddit />
+            <a
+              href="https://www.reddit.com/user/Stoic-tom"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaReddit style={{ color: "#FF5700" }} />
             </a>
           </li>
           <li>
             {" "}
             <a
               href="https://www.linkedin.com/in/tom-hames-0036a889/"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <FaLinkedin />
+              <FaLinkedin style={{ color: "#0077B5" }} />
             </a>
           </li>
         </ul>
-        <p>Made with <FaCoffee /> and <FaHeart /> by Tom Hames</p>
-
+        <div className="footer-paragraph">
+          <p style={{ fontSize: "12px" }}>
+            Made with <FaCoffee /> and <FaHeart /> by Tom Hames
+          </p>
+        </div>
       </div>
     );
   }

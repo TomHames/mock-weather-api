@@ -1,9 +1,15 @@
+body {
+  background-color: black;
+}
+
 .App {
   text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -100%);
+  color: white;
+  font-family: "Titillium Web", sans-serif;
 }
 
 ul {
@@ -11,12 +17,12 @@ ul {
 }
 
 li {
-    display:inline-block;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
+  display: inline-block;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
 }
 
 a {
-  color: black;
+  color: white;
 }
