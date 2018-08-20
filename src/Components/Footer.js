@@ -53,7 +53,7 @@ class Footer extends React.Component {
           </li>
         </ul>
         <div className="footer-paragraph">
-          <p style={{ fontSize: "12px" }}>
+          <p style={{ fontSize: "14px" }}>
             Made with <FaCoffee /> and <FaHeart /> by Tom Hames
           </p>
         </div>
