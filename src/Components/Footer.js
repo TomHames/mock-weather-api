@@ -28,7 +28,7 @@ class Footer extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGooglePlus style={{ color: "#d2d2d2" }} />
+              <FaGooglePlus style={{ color: "#E3695A" }} />
             </a>
           </li>
           <li>
@@ -38,7 +38,7 @@ class Footer extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaReddit style={{ color: "#FF5700" }} />
+              <FaReddit style={{ color: "#FF4500" }} />
             </a>
           </li>
           <li>
@@ -48,7 +48,7 @@ class Footer extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin style={{ color: "#0077B5" }} />
+              <FaLinkedin style={{ color: "#3B5998" }} />
             </a>
           </li>
         </ul>

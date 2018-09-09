@@ -5,20 +5,27 @@ class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      weather: []
+      location: [],
+      icon: [],
+      temperature: []
     }
-      } 
-      componentDidMount() {
-       if (navigator.geolocation)
-        navigator.geolocation.getCurrentPosition(this.showPosition, this.showError);
-  
-  }
+  } 
+    componentDidMount() {
+      if (navigator.geolocation)
+      navigator.geolocation.getCurrentPosition(this.showPosition, this.showError);
+    }
     showPosition = (position) => {
   
           axios.get(`https://fcc-weather-api.glitch.me/api/current?lat=${position.coords.latitude}&lon=${position.coords.longitude}`)
         .then(res => {
-          const weather = res.data.name;
-          this.setState({ weather });
+          const location = res.data.name;
+          const icon = res.data.weather[0].icon;
+          const temperature = Math.round(res.data.main.temp);
+
+          this.setState({ location });
+          this.setState({ icon });
+          this.setState({ temperature });
+
         })
       }
   
@@ -28,9 +35,11 @@ class Main extends Component {
   
     render() {
       return (
-        <div>
+        <div> 
           <p>
-            {this.state.weather}
+            {this.state.location}
+            <img src={this.state.icon}/>
+            {this.state.temperature}
           </p>
         </div>
       );
