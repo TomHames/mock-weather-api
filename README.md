@@ -1,7 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-View project live at: https://codesandbox.io/s/1rpz6nvonj
-
+View project live at: https://codesandbox.io/u/TomHames
 Project is based off the following template: https://codepen.io/tomhames/pen/ergqaz 
 
 Below you will find some information on how to perform common tasks.<br>
